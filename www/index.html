@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0f1115">
+  <title>SerieTrack</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css?v=2">
+</head>
+<body>
+  <header class="topbar">
+    <h1 id="title">SerieTrack</h1>
+    <span id="sync" class="sync" hidden>Aggiorno…</span>
+    <a href="#/settings" class="icon-btn" aria-label="Impostazioni">
+      <svg viewBox="0 0 24 24"><path d="M12 15.5a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Zm7.43-2.53a7.8 7.8 0 0 0 0-1.94l2.03-1.58a.5.5 0 0 0 .12-.64l-1.92-3.32a.5.5 0 0 0-.6-.22l-2.39.96a7.3 7.3 0 0 0-1.68-.98l-.36-2.54A.5.5 0 0 0 14.13 2h-3.84a.5.5 0 0 0-.5.42l-.36 2.54c-.6.24-1.17.57-1.68.98l-2.39-.96a.5.5 0 0 0-.6.22L2.84 8.52a.5.5 0 0 0 .12.64l2.03 1.58a7.8 7.8 0 0 0 0 1.94l-2.03 1.58a.5.5 0 0 0-.12.64l1.92 3.32c.13.22.39.3.6.22l2.39-.96c.51.41 1.08.74 1.68.98l.36 2.54c.04.24.25.42.5.42h3.84c.25 0 .46-.18.5-.42l.36-2.54c.6-.24 1.17-.57 1.68-.98l2.39.96c.22.08.47 0 .6-.22l1.92-3.32a.5.5 0 0 0-.12-.64l-2.03-1.58Z"/></svg>
+    </a>
+  </header>
+
+  <main id="view"></main>
+
+  <nav class="tabbar">
+    <a href="#/watch" data-tab="watch">
+      <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg><span>Da guardare</span>
+    </a>
+    <a href="#/shows" data-tab="shows">
+      <svg viewBox="0 0 24 24"><path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z"/></svg><span>Serie</span>
+    </a>
+    <a href="#/calendar" data-tab="calendar">
+      <svg viewBox="0 0 24 24"><path d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2H7Zm-2 8h14v10H5V10Z"/></svg><span>Calendario</span>
+    </a>
+    <a href="#/search" data-tab="search">
+      <svg viewBox="0 0 24 24"><path d="M10 2a8 8 0 0 1 6.32 12.9l5.39 5.4-1.41 1.4-5.4-5.39A8 8 0 1 1 10 2Zm0 2a6 6 0 1 0 0 12 6 6 0 0 0 0-12Z"/></svg><span>Cerca</span>
+    </a>
+  </nav>
+
+  <div id="modal" class="modal" aria-hidden="true"><div class="sheet" id="sheet"></div></div>
+  <div id="toast" class="toast"></div>
+
+  <script src="app.js?v=2"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+{
+  "appId": "it.serietrack.app",
+  "appName": "SerieTrack",
+  "webDir": "www",
+  "backgroundColor": "#0f1115",
+  "android": { "backgroundColor": "#0f1115" }
+}
